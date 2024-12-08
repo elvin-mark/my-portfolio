@@ -1,7 +1,11 @@
 <div class="p-5">
   <markdown
     katex
-    [src]="'assets/blogs/' + blogName + '.md'"
+    [src]="
+      'https://raw.githubusercontent.com/elvin-mark/my-portfolio/refs/heads/main/blogs/' +
+      blogName +
+      '.md'
+    "
     (load)="onLoad($event)"
     (error)="onError($event)"
   >
