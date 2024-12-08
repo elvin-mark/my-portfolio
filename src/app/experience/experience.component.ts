@@ -63,10 +63,10 @@ export class ExperienceComponent {
       location: 'Japan',
       duration: '2022 - Present',
       responsibilities: [
-        'Developed and tested scalable microservices in Go, integrating with Cassandra DB and PostgreSQL, with robust CI/CD pipelines and containerized deployments using Docker.',
-        'Designed and implemented API backends using Spring Boot, integrated with AWS services (RDS, Cognito, SES, S3).',
-        'Analyzed and documented vendor-developed software, implementing enhancements by modifying open-source C code.',
-        'Built real-time communication modules for internal systems and ensured performance optimization in high-concurrency environments.',
+        'Developed and tested scalable microservices in Go, integrating with NoSQL and relational databases, with robust CI/CD pipelines and containerized deployments using Docker.',
+        'Designed and implemented API backends leveraging modern backend frameworks, integrating with cloud services for authentication, email, storage, and database management.',
+        'Analyzed and enhanced third-party software by documenting and modifying open-source components, ensuring alignment with project requirements.',
+        'Built and optimized high-performance communication modules for internal systems, focusing on concurrency, scalability, and system reliability',
       ],
     },
   ];
