@@ -1,0 +1,6 @@
+.container{
+    display: grid;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    grid-template-rows: auto 1fr auto;
+}

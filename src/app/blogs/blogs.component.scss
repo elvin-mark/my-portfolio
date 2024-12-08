@@ -1,0 +1,21 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+.tag {
+    background-color: #edf2f7;
+    color: #4a5568;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+.tag:hover {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  

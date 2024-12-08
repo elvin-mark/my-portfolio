@@ -1,0 +1,123 @@
+.papers-list {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .papers-list h1 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .papers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .paper-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .paper-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .paper-item h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .paper-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .paper-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .paper-item a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .papers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+  .certifications-list {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .certifications-list h1 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .certification-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .certification-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .certification-item h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .certification-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .certification-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .certification-item a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .certifications-grid {
+      grid-template-columns: 1fr;
+    }
+  }

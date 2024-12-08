@@ -1,0 +1,42 @@
+<section class="bg-gray-100 py-12 space-y-4">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">My Education</h1>
+    <div class="space-y-8">
+      <div
+        class="bg-white rounded-lg shadow-lg p-6 experience-item"
+        *ngFor="let education of educationList"
+      >
+        <h2 class="text-2xl font-semibold">{{ education.title }}</h2>
+        <h3 class="text-xl text-gray-600">
+          {{ education.organization }} | {{ education.location }}
+        </h3>
+        <p class="text-gray-500 mb-2">{{ education.duration }}</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li *ngFor="let task of education.remarks">
+            {{ task }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">My Experience</h1>
+    <div class="space-y-8">
+      <div
+        class="bg-white rounded-lg shadow-lg p-6 experience-item"
+        *ngFor="let experience of experiences"
+      >
+        <h2 class="text-2xl font-semibold">{{ experience.role }}</h2>
+        <h3 class="text-xl text-gray-600">
+          {{ experience.organization }} | {{ experience.location }}
+        </h3>
+        <p class="text-gray-500 mb-2">{{ experience.duration }}</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li *ngFor="let task of experience.responsibilities">
+            {{ task }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

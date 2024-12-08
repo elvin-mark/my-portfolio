@@ -1,0 +1,9 @@
+<div class="p-5">
+  <markdown
+    katex
+    [src]="'assets/blogs/' + blogName + '.md'"
+    (load)="onLoad($event)"
+    (error)="onError($event)"
+  >
+  </markdown>
+</div>

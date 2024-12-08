@@ -1,0 +1,37 @@
+<!-- src/app/components/header/header.component.html -->
+<header class="bg-white shadow-md">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="text-2xl font-bold">
+      <a href="/">Elvin Mark Munoz Vega</a>
+    </div>
+    <nav class="hidden md:flex space-x-4">
+      <a href="/about" class="text-gray-700 hover:text-blue-500">About</a>
+      <a href="/projects" class="text-gray-700 hover:text-blue-500">Projects</a>
+      <a href="/experience" class="text-gray-700 hover:text-blue-500"
+        >Education & Experience</a
+      >
+      <a href="/papers" class="text-gray-700 hover:text-blue-500"
+        >Certifications & Papers</a
+      >
+      <a href="/blogs" class="text-gray-700 hover:text-blue-500">Blogs</a>
+    </nav>
+    <div class="md:hidden">
+      <button mat-button [matMenuTriggerFor]="menu" style="color: black">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item onclick="location.href='/about'">About</button>
+        <button mat-menu-item onclick="location.href='/projects'">
+          Projects
+        </button>
+        <button mat-menu-item onclick="location.href='/experience'">
+          Education & Experience
+        </button>
+        <button mat-menu-item onclick="location.href='/papers'">
+          Certifications & Papers
+        </button>
+        <button mat-menu-item onclick="location.href='/blogs'">Blogs</button>
+      </mat-menu>
+    </div>
+  </div>
+</header>

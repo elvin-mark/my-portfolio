@@ -1,0 +1,50 @@
+<section class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">My Blogs</h1>
+    <div class="mb-6 flex flex-wrap gap-2">
+      <button
+        *ngFor="let tag of tags"
+        class="px-4 py-2 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition"
+        [class.bg-blue-500]="tag === selectedTag"
+        [class.text-white]="tag === selectedTag"
+        (click)="filterBlogs(tag)"
+      >
+        {{ tag }}
+      </button>
+      <button
+        class="px-4 py-2 rounded-full border border-gray-500 text-gray-500 hover:bg-gray-500 hover:text-white transition"
+        [class.bg-gray-500]="!selectedTag"
+        [class.text-white]="!selectedTag"
+        (click)="filterBlogs('')"
+      >
+        All
+      </button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+        *ngFor="let blog of filteredBlogs"
+      >
+        <img
+          src="{{ blog.img }}"
+          alt="{{ blog.title }}"
+          class="w-full h-40 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">{{ blog.title }}</h2>
+          <p class="text-gray-600">
+            {{ blog.description }}
+          </p>
+          <a
+            href="{{ blog.link }}"
+            class="mt-2 inline-block text-blue-500 hover:underline"
+            >Read More</a
+          >
+          <div class="tags mt-2">
+            <span *ngFor="let tag of blog.tags" class="tag">{{ tag }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
