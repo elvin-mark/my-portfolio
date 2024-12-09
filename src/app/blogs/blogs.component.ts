@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-blogs',
@@ -16,44 +17,19 @@ export class BlogsComponent {
     'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWRpZW50MiIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2NmQ5ZWYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTgyNGMiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWRpZW50MikiLz48L3N2Zz4=',
     'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImdyYWRpZW50MyIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkMDk0ZWEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmU5NDAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWRpZW50MykiLz48L3N2Zz4=',
   ];
-  blogs = [
-    {
-      img: '',
-      title: 'Least Action Principle',
-      description: '',
-      link: '/blog?blogName=least-action-principle',
-      tags: ['physics'],
-    },
-    {
-      img: '',
-      title: 'My journal in General Relativity',
-      description: '',
-      link: '/blog?blogName=general-relativity',
-      tags: ['physics'],
-    },
-    {
-      img: '',
-      title: 'Harmonics in Physics',
-      description: '',
-      link: '/blog?blogName=harmonics',
-      tags: ['physics'],
-    },
-    {
-      img: '',
-      title: 'Autodifferentiation',
-      description: '',
-      link: '/blog?blogName=autodiff',
-      tags: ['ai'],
-    },
-  ];
+  blogs: any[] = [];
   tags: string[] = [];
   selectedTag: string | null = null;
-  filteredBlogs = [...this.blogs];
+  filteredBlogs: any[] = [];
+
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
+    this.blogs = this.dataService.getBlogs();
+    this.filteredBlogs = [...this.blogs];
     const myTags: Set<string> = new Set();
-    this.blogs.forEach((blog) => {
-      blog.tags.forEach((tag) => myTags.add(tag));
+    this.blogs.forEach((blog: any) => {
+      blog.tags.forEach((tag: any) => myTags.add(tag));
     });
     this.tags = Array.from(myTags);
     this.blogs.forEach((e) => {

@@ -1,0 +1,196 @@
+{
+  "blogs": [
+    {
+      "img": "",
+      "title": "Least Action Principle",
+      "description": "",
+      "link": "/blog?blogName=least-action-principle",
+      "tags": ["physics"]
+    },
+    {
+      "img": "",
+      "title": "My journal in General Relativity",
+      "description": "",
+      "link": "/blog?blogName=general-relativity",
+      "tags": ["physics"]
+    },
+    {
+      "img": "",
+      "title": "Harmonics in Physics",
+      "description": "",
+      "link": "/blog?blogName=harmonics",
+      "tags": ["physics"]
+    },
+    {
+      "img": "",
+      "title": "Autodifferentiation",
+      "description": "",
+      "link": "/blog?blogName=autodiff",
+      "tags": ["ai"]
+    },
+    {
+      "img": "",
+      "title": "Riemann Hypothesis",
+      "description": "",
+      "link": "/blog?blogName=riemann-hypothesis",
+      "tags": ["math"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "日本語能力試験N１/Japanese Language Proficiency Test N1",
+      "organization": "Japan Educational Exchanges and Services",
+      "date": "2024-07-31T15:00:00.000Z",
+      "description": "",
+      "link": "https://www.jlpt.jp/about/levelsummary.html"
+    },
+    {
+      "title": "基本情報技術者 / Fundamental Information Technology Engineer",
+      "organization": "IPA: Information-technology Promotion Agency, Japan",
+      "date": "2024-11-30T15:00:00.000Z",
+      "description": "",
+      "link": "https://www.ipa.go.jp/shiken/kubun/fe.html"
+    }
+  ],
+  "papers": [
+    {
+      "title": "Exploiting the transient behavior of thermocapillary convection flows to enhance non-contact mesoscale manipulation",
+      "authors": "Johan Quispe, Elvin Muñoz, Emir Vela",
+      "journal": "Applied Physics Letters",
+      "year": 2016,
+      "link": "https://aip.scitation.org/doi/10.1063/1.4963159"
+    },
+    {
+      "title": "Optimizing the speed of single infrared-laser-induced thermocapillary flows micromanipulation by using design of experiments",
+      "authors": "Elvin Muñoz, Johan Quispe, Pierre Lambert, Aude Bolopion, Ronald Terrazas, Stéphane Régnier, Emir Vela",
+      "journal": "Journal of Micro-Bio Robotics",
+      "year": 2017,
+      "link": "https://hal.archives-ouvertes.fr/hal-02963645"
+    },
+    {
+      "title": "Single particle manipulation/sorting through the transient response of thermocapillary convection flows",
+      "authors": "J. E. Quispe, J. C. Inga, E. M. Muñoz, S. Régnier, E. Vela",
+      "journal": "2016 International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)",
+      "year": 2016,
+      "link": "https://ieeexplore.ieee.org/document/7561730"
+    },
+    {
+      "title": "Closed-loop selective manipulation of multiple microparticles by controlling the transient regime of Marangoni flows",
+      "authors": "E. M. Muñoz, J. E. Quispe, E. Vela",
+      "journal": "2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "year": 2016,
+      "link": "https://ieeexplore.ieee.org/document/7759754"
+    },
+    {
+      "title": "Laser-induced thermocapillary flow manipulation of microparticles with obstacle avoidance in a non-patterned fluidic environment",
+      "authors": "E. M. Muñoz, J. E. Quispe, S. Régnier, E. Vela",
+      "journal": "2017 International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)",
+      "year": 2017,
+      "link": "https://ieeexplore.ieee.org/document/8001939"
+    },
+    {
+      "title": "Hand rehabilitation using Soft-Robotics",
+      "authors": "A. A. Reymundo, E. M. Muñoz, M. Navarro, E. Vela, H. I. Krebs",
+      "journal": "2016 6th IEEE International Conference on Biomedical Robotics and Biomechatronics (BioRob)",
+      "year": 2016,
+      "link": "https://ieeexplore.ieee.org/document/7523708"
+    }
+  ],
+  "educationList": [
+    {
+      "title": "BSc. Engineering Physics",
+      "organization": "National University of Engineering",
+      "location": "Lima, Peru",
+      "duration": "2011-2016",
+      "remarks": []
+    },
+    {
+      "title": "Japanese Language School",
+      "organization": "大阪大学日本語日本教育 センター",
+      "location": "Tokyo, Japan",
+      "duration": "2017-2018",
+      "remarks": []
+    },
+    {
+      "title": "BSc. Computer Science",
+      "organization": "Tokyo Institute of Technology",
+      "location": "Tokyo, Japan",
+      "duration": "2018-2022",
+      "remarks": []
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Researcher",
+      "organization": "UTEC (Universidad de Ingeniería y Tecnología)",
+      "location": "Peru",
+      "duration": "2016 - 2017",
+      "responsibilities": [
+        "Developed software in C++ for controlling an optical setup to manipulate microrobots by creating and controlling convection flows.",
+        "Utilized the Artificial Potential method to improve microrobot control and enable obstacle avoidance."
+      ]
+    },
+    {
+      "role": "Researcher",
+      "organization": "Tokyo Institute of Technology",
+      "location": "Japan",
+      "duration": "2021 - 2022",
+      "responsibilities": [
+        "Successfully trained neural networks using SAM optimization and assessed their performance.",
+        "Studied the impact of hyperparameters on training outcomes.",
+        "Investigated loss landscapes and parameter trajectories using the Digits dataset.",
+        "Utilized the Weights and Biases platform for tracking training progress.",
+        "Leveraged GPU clusters provided by the university lab for efficient training."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "organization": "Rakuten Mobile",
+      "location": "Japan",
+      "duration": "2022 - Present",
+      "responsibilities": [
+        "Developed and tested scalable microservices in Go, integrating with NoSQL and relational databases, with robust CI/CD pipelines and containerized deployments using Docker.",
+        "Designed and implemented API backends leveraging modern backend frameworks, integrating with cloud services for authentication, email, storage, and database management.",
+        "Analyzed and enhanced third-party software by documenting and modifying open-source components, ensuring alignment with project requirements.",
+        "Built and optimized high-performance communication modules for internal systems, focusing on concurrency, scalability, and system reliability"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "img": "assets/projects/loss_landscape.png",
+      "alt": "PyTorch Trainer",
+      "title": "PyTorch Simple Trainer",
+      "description": "This tool will allow you to train any computer vision model against custom datasets.",
+      "link": "https://github.com/elvin-mark/pytorch_trainer"
+    },
+    {
+      "img": "assets/projects/jade_logo.png",
+      "alt": "JADE",
+      "title": "JADE",
+      "description": "This is a simple framework to build and train neural networks in Java. This framework was written from scratch so no extra dependencies are needed.",
+      "link": "https://github.com/elvin-mark/jade"
+    },
+    {
+      "img": "assets/projects/monday-app.png",
+      "alt": "Monday App",
+      "title": "Monday App",
+      "description": "This is a simple RAG application.",
+      "link": "https://github.com/elvin-mark/monday-app"
+    },
+    {
+      "img": "assets/projects/movie-recommender.png",
+      "alt": "Movie Recommender",
+      "title": "Movie Recommender",
+      "description": "Simple movie recommender that leverages a lightweight text embedding deep learning model to search for similar movies from a clustered movie list.",
+      "link": "https://github.com/elvin-mark/movie-recommender"
+    },
+    {
+      "img": "assets/projects/lets-learn-korean.png",
+      "alt": "Let's learn korean!",
+      "title": "Learning Korean App",
+      "description": "Simple web application that helps beginners learn the Korean language through flashcards and short quizzes.",
+      "link": "https://github.com/elvin-mark/korean-learning-app"
+    }
+  ]
+}
