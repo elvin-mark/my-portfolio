@@ -1,14 +1,19 @@
 <section class="bg-gray-100 py-12 min-h-full">
   <div class="container mx-auto px-4 text-justify">
-    <h1 class="text-4xl font-bold text-gray-800 mb-6">About Me</h1>
+    <h1
+      class="text-4xl font-bold text-gray-800 mb-6 fade-in"
+      style="animation-delay: 0.3s"
+    >
+      About Me
+    </h1>
     <div class="flex flex-col md:flex-row items-center">
       <img
         src="assets/profile/me.jpg"
         alt="Profile"
-        class="w-40 h-40 rounded-full mb-6 md:mb-0 md:mr-8 hover:scale-105 transform transition-transform duration-300"
+        class="w-40 h-40 rounded-full mb-6 md:mb-0 md:mr-8 hover:scale-105 transform transition-transform duration-300 slide-in-left"
       />
-      <div class="text-gray-700">
-        <p>
+      <div class="text-gray-700 slide-in-right">
+        <p class="fade-in" style="animation-delay: 0.5s">
           Hi there! I'm a passionate software developer with a strong interest
           on AI and machine learning. I've been working in the field for about 3
           years and have a solid foundation in
@@ -17,7 +22,7 @@
           <span class="font-bold">FastAPI, Flask and SpringBoot</span> to build
           restful APIs for Backend applications.
         </p>
-        <p>
+        <p class="fade-in" style="animation-delay: 0.8s">
           My expertise lies in natural language processing and computer vision.
           I'm driven by a desire to create innovative solutions that make a
           positive impact. Some of my recent personal projects are detailed
@@ -25,7 +30,7 @@
           details and code samples on my
           <a href="http://github.com/elvin-mark" class="underline">Github</a>.
         </p>
-        <p>
+        <p class="fade-in" style="animation-delay: 1.1s">
           In my free time, I enjoy learning and trying new AI technologies. I
           also enjoy learning new (human) languages. Currently, I am actively
           learning 日本語 and 한국어 (for which I made this cool
@@ -41,3 +46,42 @@
     </div>
   </div>
 </section>
+
+<style>
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  .slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+  }
+
+  .slide-in-right {
+    transform: translateX(100%);
+    opacity: 0;
+    animation: slideInRight 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+</style>
