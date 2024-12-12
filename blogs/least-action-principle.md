@@ -1,6 +1,6 @@
 # Least Action Principle
 
-When I learned for the very first time about the Least Action Principle, I was amazed at how useful it was and how beautifully it compressed so much in a very simple equation, but at the same time I had a lot of questions on how it was derived and what it actually meant. So after thinking a lot for so many years, I have come to my own interpretation to which I feel comfortable with and I wanted to share it here.
+When I learned for the very first time about the Least Action Principle, I was amazed at how useful it was and how beautifully it compressed so much in a very simple equation, but at the same time I had a lot of questions on how it was derived and what it actually meant. So after lots of thinking, reading on publications regarding the topic and watching some videos on youtube [1], I have come to my own interpretation to which I feel comfortable with and I wanted to share it here.
 
 ## The traditional way
 
@@ -41,10 +41,14 @@ $$-mg = m\ddot{y}$$
 
 $$\ddot{y} = -g$$
 
-And this is how the Least Action Principle along with the Lagrangian and the Euler-Lagrange equation are presented. There is another approach to show these concepts that I find it more appealing. In this approach, the concept of virtual work and D'Alambert's principle ($\delta W  = (\vec{F}_{ext} - \frac{d\vec{p}}{dt}) \dot \delta r= 0$) are used to derived that Euler-Lagrange equation first, and from there the lagrangian is defined. From the Euler-Lagrange equation and the defined lagrangian, we infere that the quantity $S = \int L(\dot{q}_i,q_i,t) dt$ is being minimized and this quantity is called "action". So, in summary, this approach goes in the reverse way compare to the first approach.
+And this is how the Least Action Principle along with the Lagrangian and the Euler-Lagrange equation are presented. There is another approach to show these concepts that I find it more appealing. In this approach, the concept of virtual work and D'Alambert's principle ($\delta W  = (\vec{F}_{ext} - \frac{d\vec{p}}{dt}) \dot \delta r= 0$) are used to derived that Euler-Lagrange equation first, and from there the lagrangian is defined. From the Euler-Lagrange equation and the defined lagrangian, we infere that the quantity $S = \int L(\dot{q}_i,q_i,t) dt$ is being minimized and this quantity is called "action". So, in summary, this approach goes in the reverse way compare to the first approach. One of my favourite derivations using this appoach is in the book from Nick Lucid [2].
 
 ## But, what is action?
+
+As I was taught about the least action principle, there were some questions that bugged my mind: what was the "action"? and what is the physical meaning behind it?.
 
 ## References
 
 [1] [The Simple Math Problem That Revolutionized Physics](https://www.youtube.com/watch?v=Q10_srZ-pbs)
+
+[2] Lucid, N. (2015). Advanced Theoretical Physics: A Historical Perspective.
